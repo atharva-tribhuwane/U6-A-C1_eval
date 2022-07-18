@@ -63,7 +63,7 @@ const Appointments = () => {
                     return (
                         <div key={ele.id} style={{margin:"15px"}}>
                         <Link to={`/appointment/${ele.id}`} >
-                            {ele.name} - {ele.date} - {ele.time}
+                            Name:  {ele.name} ---- Date:  {ele.date} ---- Time:  {ele.time}
                         </Link>
                         </div>
                     )
