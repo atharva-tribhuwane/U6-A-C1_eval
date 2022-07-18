@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Appointments = () => {
     const [appoints, setAppoints] = React.useState([]);
@@ -36,7 +37,7 @@ const Appointments = () => {
         })
         .then((res)=>res.json())
         .then((res)=>{
-            console.log("successfulll");
+            getData();
         })
         .catch((err)=>console.log(err))
     }
@@ -55,14 +56,16 @@ const Appointments = () => {
             <input type="text" placeholder="Gender..." name="gend" value={gender} onChange={(e)=>setGender(e.target.value)}/>
             <button onClick={postData}>SetAppointment</button>
             <hr />
-            <h1>Appointments:</h1>
+            <h1>Appointments: Click for More Details</h1>
             <hr />
             {
                 appoints.map((ele) => {
                     return (
-                        <h1 key={ele.id}>
-                            {ele.name}
-                        </h1>
+                        <div key={ele.id} style={{margin:"15px"}}>
+                        <Link to={`/appointment/${ele.id}`} >
+                            {ele.name} - {ele.date} - {ele.time}
+                        </Link>
+                        </div>
                     )
                 })
             }

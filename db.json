@@ -1,40 +1,31 @@
 {
   "appoints": [
     {
-      "name": "Atharva",
-      "age": 22,
-      "appointmentdetails": "This is a dummy Appointment ",
-      "time": "2pm",
-      "date": "14 july",
-      "gender": "Male",
-      "id": 1
-    },
-    {
-      "name": "Masai",
-      "age": 22,
-      "appointmentdetails": "This is a dummy Appointment ",
-      "time": "2pm",
-      "date": "14 july",
-      "gender": "Male",
-      "id": 2
-    },
-    {
-      "name": "School",
-      "age": 22,
-      "appointmentdetails": "This is a dummy Appointment ",
-      "time": "2pm",
-      "date": "14 july",
-      "gender": "Male",
-      "id": 3
-    },
-    {
       "name": "sdasd",
       "age": "sdsad",
       "appointmentdetails": "sdsads",
       "time": "01:42",
       "date": "2022-07-12",
       "gender": "dsadsa",
-      "id": 4
+      "id": 1
+    },
+    {
+      "name": "masai",
+      "age": "20",
+      "appointmentdetails": "this is dummy entry",
+      "time": "06:15",
+      "date": "2022-07-17",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "name": "school",
+      "age": "20",
+      "appointmentdetails": "this is dummy entry",
+      "time": "06:15",
+      "date": "2022-07-17",
+      "gender": "Male",
+      "id": 3
     }
   ]
 }
